@@ -1,0 +1,43 @@
+[user]
+    email = supermanitu@gmail.com
+    name = Jan van Brügge
+
+[merge]
+	ff = false
+
+[pull]
+	ff = true
+
+[alias]
+	c = commit
+	ca = commit -a
+	caa = commit -a --amend
+
+	ch = checkout
+	chb = checkout -b
+	chpr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
+
+	r = rebase
+	rc = rebase --continue
+	ri = rebase -i
+
+	a = add
+	b = branch
+	d = diff
+	dc = diff --cached
+	s = status
+
+	st = stash
+	stp = stash pop
+
+	p = push
+	pso = push --set-upstream origin HEAD
+	pu = pull
+	m = merge
+
+	uu = !git fetch upstream && git rebase upstream/master
+
+	l = log --pretty=oneline --abbrev-commit --graph
+
+[core]
+	pager = less -F -X
