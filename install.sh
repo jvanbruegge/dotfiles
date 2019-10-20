@@ -19,3 +19,9 @@ yay -S $(< packages.txt)
 for f in */install.sh; do
     $f
 done
+
+# Enable systemd services
+for s in $(< enable.txt); do
+    sudo systemctl enable "$s"
+    sudo systemctl start "$s"
+done
