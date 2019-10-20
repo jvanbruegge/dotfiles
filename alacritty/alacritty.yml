@@ -4,8 +4,8 @@ window:
     lines: 0
 
   padding:
-    x: 0
-    y: 0
+    x: 2
+    y: 2
 
   dynamic_padding: false
   decorations: none
@@ -20,10 +20,10 @@ tabspaces: 4
 
 font:
   normal:
-    family: FuraMono Nerd Font
-    style: Regular
+    family: CodeNewRoman Nerd Font
+    style: Book
 
-  size: 10.0
+  size: 11.0
 
 # Solarized color scheme
 colors:
