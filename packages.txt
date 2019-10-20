@@ -1,3 +1,5 @@
+alacritty
+alacritty-terminfo
 bluez
 brightnessctl
 dnsmasq
@@ -11,9 +13,12 @@ iwd
 libva-mesa-driver
 mpv
 neovim
+nerd-fonts-complete
 networkmanager
+ntp
 otf-ipafont
 python-neovim
+ripgrep
 sway
 swayidle
 swaylock
