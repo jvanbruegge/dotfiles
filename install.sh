@@ -12,7 +12,6 @@ yay -S reflector
 sudo reflector --save /etc/pacman.d/mirrorlist --sort rate -c Germany -n 15 -p https
 
 yay -Syu
-yay -R wpa_supplicant
 yay -S $(< packages.txt)
 
 # Install config files

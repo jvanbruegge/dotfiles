@@ -14,13 +14,12 @@ window:
 scrolling:
   history: 20000
   multiplier: 3
-  faux_multiplier: 3
 
 tabspaces: 4
 
 font:
   normal:
-    family: CodeNewRoman Nerd Font
+    family: DroidSansMono Nerd Font
     style: Book
 
   size: 11.0

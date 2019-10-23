@@ -9,7 +9,7 @@ fwupd
 git
 go
 intel-ucode
-iwd
+jq
 libva-mesa-driver
 mpv
 neovim
@@ -22,6 +22,8 @@ ripgrep
 sway
 swayidle
 swaylock
+tmux
+tmuxinator
 ttf-dejavu
 ttf-joypixels
 wofi-hg
