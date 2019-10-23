@@ -1,0 +1,38 @@
+config="$HOME/.config/zsh"
+
+# Load custom env and aliases
+source "$config/env"
+source "$config/aliases"
+
+###############################################
+# Oh-my-zsh configuration                     #
+###############################################
+POWERLEVEL9K_DISABLE_RPROMPT="true"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+###############################################
+# Plugin configuration                        #
+###############################################
+COMPLETION_WAITING_DOTS="true"
+REPORTTIME=30
+
+plugins=(
+    systemd
+    colored-man-pages
+    extract
+    history-substring-search
+    tmux
+    tmuxinator
+    z
+)
+
+source "$ZSH/oh-my-zsh.sh"
+
+###############################################
+# ZSH Config                                  #
+###############################################
+setopt nobeep
+setopt hist_find_no_dups

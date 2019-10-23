@@ -1,0 +1,14 @@
+env_config="$HOME/.config"
+env_cache="$HOME/.cache"
+
+export CARGO_HOME="$env_cache/cargo"
+export ZSH="$env_cache/zsh/oh-my-zsh"
+export ZSH_CUSTOM="$env_cache/zsh/omz-custom"
+export HISTFILE="$env_cache/zsh/history"
+export _Z_DATA="$env_cache/zsh/z"
+
+export LANG=de_DE.UTF-8
+
+export EDITOR="nvim"
+
+export MOZ_ENABLE_WAYLAND=1
