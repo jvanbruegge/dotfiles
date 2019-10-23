@@ -1,2 +1,18 @@
-alias v=nvim
-alias g=git
+#####################################################################
+# Aliases
+#####################################################################
+
+alias v='nvim'
+alias g='git'
+alias p='pnpm'
+alias px='pnpmx'
+alias o='xdg-open'
+alias k='kubectl'
+alias t='tmuxinator'
+
+#####################################################################
+# Functions
+#####################################################################
+function k-env {
+    kubectl config set-context $(kubectl config current-context) --namespace="$1"
+}

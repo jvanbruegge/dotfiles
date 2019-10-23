@@ -1,14 +1,24 @@
 env_config="$HOME/.config"
 env_cache="$HOME/.cache"
 
+export MOZ_ENABLE_WAYLAND=1
+
 export CARGO_HOME="$env_cache/cargo"
 export ZSH="$env_cache/zsh/oh-my-zsh"
 export ZSH_CUSTOM="$env_cache/zsh/omz-custom"
 export HISTFILE="$env_cache/zsh/history"
 export _Z_DATA="$env_cache/zsh/z"
 
+export LC_ALL=de_DE.UTF-8
 export LANG=de_DE.UTF-8
 
 export EDITOR="nvim"
+export FZF_DEFAULT_COMMAND='rg --files --follow --hidden --glob "!.git/"'
 
-export MOZ_ENABLE_WAYLAND=1
+export PATH="$HOME/.local/bin:$PATH"
+
+###############################################
+# History                                     #
+###############################################
+export HISTSIZE=100000
+export SAVEHIST=$HISTSIZE
