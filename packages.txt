@@ -6,6 +6,7 @@ dnsmasq
 firefox
 firefox-i18n-de
 fwupd
+fzf
 git
 go
 intel-ucode
@@ -16,10 +17,10 @@ neovim
 nerd-fonts-complete
 networkmanager
 ntp
+openssh
 otf-ipafont
 python-neovim
 ripgrep
-openssh
 sway
 swayidle
 swaylock
@@ -27,6 +28,7 @@ tmux
 tmuxinator
 ttf-dejavu
 ttf-joypixels
+typescript-language-server-bin
 wofi-hg
 xorg-server-xwayland
 zsh
