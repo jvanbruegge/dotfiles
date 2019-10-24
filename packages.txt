@@ -19,6 +19,7 @@ ntp
 otf-ipafont
 python-neovim
 ripgrep
+openssh
 sway
 swayidle
 swaylock
