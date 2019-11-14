@@ -16,7 +16,7 @@ set $menu dmenu_path | wofi --show run | xargs swaymsg exec --
 ## Misc configuration                           ##
 ##################################################
 # disable window titles
-default_border pixel
+default_border none
 
 # flash window transparent when switching focus
 exec_always --no-startup-id flashfocus
@@ -120,7 +120,7 @@ set $laptop eDP-1
 bindswitch lid:on output $laptop disable
 bindswitch lid:off output $laptop enable
 output $laptop scale 1.5
-    
+
 # Laptop brightness
 bindsym XF86MonBrightnessUp exec brightnessctl set '+5%'
 bindsym XF86MonBrightnessDown exec brightnessctl set '5%-'
