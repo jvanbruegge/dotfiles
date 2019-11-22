@@ -12,6 +12,7 @@ go
 intel-ucode
 jq
 libva-mesa-driver
+mako
 mpv
 neovim
 nerd-fonts-complete
