@@ -30,6 +30,7 @@ tmuxinator
 ttf-dejavu
 ttf-joypixels
 typescript-language-server-bin
+waybar
 wofi-hg
 xorg-server-xwayland
 zsh
