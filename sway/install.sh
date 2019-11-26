@@ -20,3 +20,4 @@ for f in $(ls "$(pwd)/sway/conf.d"); do
 done
 
 ln -s "$(pwd)/sway/waybar.json" "$HOME/.config/waybar/config"
+ln -s "$(pwd)/sway/waybar.css" "$HOME/.config/waybar/style.css"
