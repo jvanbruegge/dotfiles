@@ -12,7 +12,7 @@ set $term alacritty
 
 set $menu dmenu_path | wofi --show run | xargs swaymsg exec --
 
-set $lock ls ~/wallpapers | shuf -n 1 | \
+set $lock ls ~/.config/sway/wallpapers | shuf -n 1 | \
     xargs -I %% swaylock --clock --datestr '%d.%m.%Y' --indicator -ef -i ~/wallpapers/%%
 
 ##################################################

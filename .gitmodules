@@ -1,0 +1,3 @@
+[submodule "sway/wallpapers"]
+	path = sway/wallpapers
+	url = git@github.com:jvanbruegge/wallpapers.git
