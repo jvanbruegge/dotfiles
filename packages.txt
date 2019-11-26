@@ -24,7 +24,7 @@ python-neovim
 ripgrep
 sway
 swayidle
-swaylock
+swaylock-effects
 tmux
 tmuxinator
 ttf-dejavu
