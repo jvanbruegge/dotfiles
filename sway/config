@@ -12,6 +12,8 @@ set $term alacritty
 
 set $menu dmenu_path | wofi --show run | xargs swaymsg exec --
 
+set $lock ls ~/wallpapers | shuf -n 1 | xargs -I % swaylock -ef -i ~/wallpapers/%
+
 ##################################################
 ## Misc configuration                           ##
 ##################################################
@@ -41,7 +43,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 # Lock session
-bindsym $mod+Shift+Return exec swaylock -f -c 000000 # TODO nicer lock screen
+bindsym $mod+Shift+Return exec $lock
 
 ## Moving around
 # Move focus
