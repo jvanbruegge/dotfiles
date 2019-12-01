@@ -33,6 +33,7 @@ ttf-dejavu
 ttf-joypixels
 typescript-language-server-bin
 waybar
+wl-clipboard
 wofi-hg
 xorg-server-xwayland
 zsh
