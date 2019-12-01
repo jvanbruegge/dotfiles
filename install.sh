@@ -24,3 +24,5 @@ for s in $(< enable.txt); do
     sudo systemctl enable "$s"
     sudo systemctl start "$s"
 done
+
+stack install --resolver=lts-14.14 ormolu

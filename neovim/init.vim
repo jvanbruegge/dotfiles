@@ -30,6 +30,9 @@ Plug 'scrooloose/syntastic'
 Plug 'leafgarland/typescript-vim'
 Plug 'vmchale/dhall-vim'
 
+"Formatting
+Plug 'sdiehl/vim-ormolu'
+
 "Tmux navigation
 Plug 'christoomey/vim-tmux-navigator'
 

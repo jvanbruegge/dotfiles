@@ -23,6 +23,7 @@ openssh
 otf-ipafont
 python-neovim
 ripgrep
+stack-static
 sway
 swayidle
 swaylock-effects
