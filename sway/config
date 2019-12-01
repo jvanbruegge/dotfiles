@@ -13,7 +13,7 @@ set $term alacritty
 set $menu dmenu_path | wofi --show run | xargs swaymsg exec --
 
 set $lock ls ~/.config/sway/wallpapers | shuf -n 1 | \
-    xargs -I %% swaylock --clock --datestr '%d.%m.%Y' --indicator -ef -i ~/wallpapers/%%
+    xargs -I %% swaylock --clock --datestr '%d.%m.%Y' --indicator -ef -i ~/.config/sway/wallpapers/%%
 
 ##################################################
 ## Misc configuration                           ##
@@ -141,7 +141,7 @@ input "1130:269:HID_046a:010d" {
 
 exec swayidle -w \
     before-sleep 'loginctl lock-session $XDG_SESSION_ID' \
-    lock 'swaylock'
+    lock 'ls ~/.config/sway/wallpapers | shuf -n 1 | xargs -I %% swaylock --clock --datestr '%d.%m.%Y' --indicator -ef -i ~/.config/sway/wallpapers/%%'
 
 exec mako
 

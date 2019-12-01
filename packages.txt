@@ -5,6 +5,7 @@ brightnessctl
 dnsmasq
 firefox
 firefox-i18n-de
+flashfocus
 fwupd
 fzf
 git
