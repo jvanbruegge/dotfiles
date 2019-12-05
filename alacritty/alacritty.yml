@@ -19,10 +19,10 @@ tabspaces: 4
 
 font:
   normal:
-    family: DroidSansMono Nerd Font
-    style: Book
+    family: BitstreamVeraSansMono Nerd Font
+    style: Regular
 
-  size: 11.0
+  size: 12.0
 
 # Solarized color scheme
 colors:

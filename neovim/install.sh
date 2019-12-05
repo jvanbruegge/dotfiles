@@ -11,5 +11,6 @@ fi
 mkdir -p "$HOME/.config/nvim"
 
 ln -s "$(pwd)/neovim/init.vim" "$HOME/.config/nvim/init.vim"
+ln -s "$(pwd)/neovim/lsp.json" "$HOME/.config/nvim/lsp.json"
 
 nvim +PlugInstall +qall

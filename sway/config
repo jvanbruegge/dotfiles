@@ -24,6 +24,18 @@ default_border none
 # flash window transparent when switching focus
 exec_always --no-startup-id flashfocus
 
+# Move floating windows by holding down mod
+floating_modifier $mod normal
+
+# Split panes
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# Toggle the current focus between tiling and floating mode
+bindsym $mod+Shift+space floating toggle
+
+# Swap focus between the tiling area and the floating area
+bindsym $mod+space focus mode_toggle
 
 ##################################################
 ## Key bindings                                 ##
@@ -85,6 +97,9 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # Make the current window fullscreen
 bindsym $mod+f fullscreen
+
+# Record a screenshot
+bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy
 
 ## Resize mode
 mode "resize" {

@@ -2,6 +2,10 @@ alacritty
 alacritty-terminfo
 bluez
 brightnessctl
+dhall-bin
+dhall-json-bin
+dhall-lsp-server-bin
+dhall-text-bin
 dnsmasq
 firefox
 firefox-i18n-de
@@ -10,6 +14,7 @@ fwupd
 fzf
 git
 go
+grin
 intel-ucode
 jq
 libva-mesa-driver
@@ -23,10 +28,12 @@ openssh
 otf-ipafont
 python-neovim
 ripgrep
+slurp
 stack-static
 sway
 swayidle
 swaylock-effects
+texlive-most
 tmux
 tmuxinator
 ttf-dejavu

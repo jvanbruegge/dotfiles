@@ -129,11 +129,18 @@ vnoremap <c-i> :call LanguageClient_textDocument_rangeFormatting()<CR>
 let g:LanguageClient_serverCommands = {
     \ 'javascript': ['typescript-language-server', '--stdio'],
     \ 'typescript': ['typescript-language-server', '--stdio'],
+    \ 'dhall': ['dhall-lsp-server', '--log=/home/jan/dhall.log']
     \ }
+let g:LanguageClient_settingsPath = '~/.config/nvim/lsp.json'
+let g:LanguageClient_hoverPreview = 'Always'
 
 "Plugin config
 let g:airline_theme = 'badwolf'
 let g:airline_powerline_fonts = 1
+
+let g:rainbow_conf = {
+    \ 'ctermfgs': ['darkblue', 'darkgreen', 'red', 'magenta', 'brown', 'lightgreen']
+\ }
 
 syntax enable
 let g:solarized_termtrans = 1
