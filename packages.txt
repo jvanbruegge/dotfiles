@@ -2,10 +2,6 @@ alacritty
 alacritty-terminfo
 bluez
 brightnessctl
-dhall-bin
-dhall-json-bin
-dhall-lsp-server-bin
-dhall-text-bin
 dnsmasq
 firefox
 firefox-i18n-de

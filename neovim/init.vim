@@ -129,7 +129,7 @@ vnoremap <c-i> :call LanguageClient_textDocument_rangeFormatting()<CR>
 let g:LanguageClient_serverCommands = {
     \ 'javascript': ['typescript-language-server', '--stdio'],
     \ 'typescript': ['typescript-language-server', '--stdio'],
-    \ 'dhall': ['dhall-lsp-server', '--log=/home/jan/dhall.log']
+    \ 'dhall': ['dhall-lsp-server']
     \ }
 let g:LanguageClient_settingsPath = '~/.config/nvim/lsp.json'
 let g:LanguageClient_hoverPreview = 'Always'

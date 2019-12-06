@@ -1,0 +1,9 @@
+
+packages: []
+resolver: lts-14.16
+extra-deps:
+- ghc-lib-parser-8.8.1@sha256:81dc4ed6ae6b7ccfda1e62e3c2d9a8600f8ecf45e4237d4dc099ccd4b74db180,8341
+- aeson-yaml-1.0.5.0@sha256:5786f021c1e088d6a5aa259120ec5b1f22bb1757f4427c1a87e0513d00f17f31,1975
+- prettyprinter-1.5.1@sha256:fca87c3e2611d3499a0341a59857e9b424a23f31646e4737d535a18582284f96,5375
+- dhall-json-1.6.0
+- dhall-1.28.0

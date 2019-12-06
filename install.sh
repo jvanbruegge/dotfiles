@@ -32,13 +32,12 @@ done
 # Set up haskell environment
 stack setup --resolver=lts-14.16
 
-echo "extra-deps:
--  ghc-lib-parser-8.8.1@sha256:81dc4ed6ae6b7ccfda1e62e3c2d9a8600f8ecf45e4237d4dc099ccd4b74db180,8341" >> ~/.stack/global-project/stack.yaml
-
+ln -sf "$(pwd)/stack/stack.yaml" "$HOME/.stack/global-project/stack.yaml"
 stack install ormolu
+stack install dhall dhall-json dhall-lsp-server
 
 echo "allow-newer: true" >> ~/.stack/config.yaml
 
 stack install hlint
 
-ln -sf "$(pwd)/misc/config.yaml" "$HOME/.stack/"
+ln -sf "$(pwd)/stack/config.yaml" "$HOME/.stack/config.yaml"
