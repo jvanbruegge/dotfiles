@@ -99,7 +99,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+f fullscreen
 
 # Record a screenshot
-bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy
+bindsym Print exec grim -g "$(slurp)" - | wl-copy
 
 ## Resize mode
 mode "resize" {
