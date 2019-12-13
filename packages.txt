@@ -1,7 +1,7 @@
 alacritty
 alacritty-terminfo
 bluez
-brightnessctl
+brightnessctl-logind
 dnsmasq
 firefox
 firefox-i18n-de
@@ -22,6 +22,7 @@ networkmanager
 ntp
 openssh
 otf-ipafont
+pamixer
 python-neovim
 ripgrep
 slurp
