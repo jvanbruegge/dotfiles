@@ -8,6 +8,7 @@
         "max-length": 50
     },
     "battery": {
+        "bat": "BAT0",
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
     },
