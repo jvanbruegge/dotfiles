@@ -23,6 +23,7 @@ ntp
 openssh
 otf-ipafont
 pamixer
+pulseaudio
 python-neovim
 ripgrep
 slurp
