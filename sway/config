@@ -100,6 +100,7 @@ bindsym $mod+f fullscreen
 
 # Record a screenshot
 bindsym Print exec grim -g "$(slurp)" - | wl-copy
+bindsym $mod+Print exec grim -g "$(slurp)" - > ~/Screenshots/$(date -Iseconds).png
 
 ## Resize mode
 mode "resize" {

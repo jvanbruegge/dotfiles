@@ -21,7 +21,6 @@ nerd-fonts-complete
 networkmanager
 ntp
 openssh
-otf-ipafont
 pamixer
 pulseaudio
 python-neovim
