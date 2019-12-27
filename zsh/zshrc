@@ -26,6 +26,7 @@ plugins=(
     history-substring-search
     tmux
     tmuxinator
+    kubectl
     z
 )
 
