@@ -95,6 +95,9 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+bindsym $mod+Shift+Alt+$left move workspace to output left
+bindsym $mod+Shift+Alt+$right move workspace to output right
+
 # Make the current window fullscreen
 bindsym $mod+f fullscreen
 
@@ -129,7 +132,7 @@ exec swayidle -w \
     before-sleep 'loginctl lock-session $XDG_SESSION_ID' \
     lock 'ls ~/.config/sway/wallpapers | shuf -n 1 | xargs -I %% swaylock --clock --datestr '%d.%m.%Y' --indicator -ef -i ~/.config/sway/wallpapers/%%'
 
-exec mako
+exec mako --default-timeout 3000
 
 ####################################################
 ## Include other configuration                    ##
