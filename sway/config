@@ -12,8 +12,7 @@ set $term alacritty
 
 set $menu dmenu_path | wofi --show run | xargs swaymsg exec --
 
-set $lock ls ~/.config/sway/wallpapers | shuf -n 1 | \
-    xargs -I %% swaylock --clock --datestr '%d.%m.%Y' --indicator -ef -i ~/.config/sway/wallpapers/%%
+set $lock ~/.config/sway/lock.sh
 
 ##################################################
 ## Misc configuration                           ##
@@ -26,6 +25,8 @@ exec_always --no-startup-id flashfocus
 
 # Move floating windows by holding down mod
 floating_modifier $mod normal
+
+seat * hide_cursor 8000
 
 # Split panes
 bindsym $mod+b splith
@@ -130,7 +131,7 @@ bar {
 
 exec swayidle -w \
     before-sleep 'loginctl lock-session $XDG_SESSION_ID' \
-    lock 'ls ~/.config/sway/wallpapers | shuf -n 1 | xargs -I %% swaylock --clock --datestr '%d.%m.%Y' --indicator -ef -i ~/.config/sway/wallpapers/%%'
+    lock '~/.config/sway/lock.sh'
 
 exec mako --default-timeout 3000
 

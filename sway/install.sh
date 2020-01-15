@@ -27,5 +27,7 @@ done
 ln -s "$(pwd)/sway/waybar.json" "$HOME/.config/waybar/config"
 ln -s "$(pwd)/sway/waybar.css" "$HOME/.config/waybar/style.css"
 
+ln -s "$(pwd)/sway/lock.sh" "$config/lock.sh"
+
 sudo ln -sf "$(pwd)/sway/xkb/us_de_diff" "/usr/share/X11/xkb/symbols/"
 sudo ln -sf "$(pwd)/sway/xkb/us_de" "/usr/share/X11/xkb/symbols/"
