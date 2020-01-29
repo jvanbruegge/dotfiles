@@ -32,6 +32,7 @@ Plug 'vmchale/dhall-vim'
 
 "Formatting
 Plug 'sdiehl/vim-ormolu'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
 "Tmux navigation
 Plug 'christoomey/vim-tmux-navigator'
@@ -132,7 +133,6 @@ let g:LanguageClient_serverCommands = {
     \ 'dhall': ['dhall-lsp-server']
     \ }
 let g:LanguageClient_settingsPath = '~/.config/nvim/lsp.json'
-let g:LanguageClient_hoverPreview = 'Always'
 
 "Plugin config
 let g:airline_theme = 'badwolf'
@@ -141,6 +141,10 @@ let g:airline_powerline_fonts = 1
 let g:rainbow_conf = {
     \ 'ctermfgs': ['darkblue', 'darkgreen', 'red', 'magenta', 'brown', 'lightgreen']
 \ }
+
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+
+set nrformats=alpha
 
 syntax enable
 let g:solarized_termtrans = 1
