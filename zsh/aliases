@@ -16,3 +16,7 @@ alias t='tmuxinator'
 function k-env {
     kubectl config set-context $(kubectl config current-context) --namespace="$1"
 }
+
+function update-mirrors {
+    sudo reflector --country Germany --age 24 --protocol https --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+}

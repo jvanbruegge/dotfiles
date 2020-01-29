@@ -24,6 +24,7 @@ openssh
 pamixer
 pulseaudio
 python-neovim
+reflector
 ripgrep
 slurp
 stack-static
