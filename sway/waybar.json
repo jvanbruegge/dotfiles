@@ -16,7 +16,8 @@
         "format": "{:%A, %d.%m.  %H:%M}"
     },
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%) "
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ifname}"
     },
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",

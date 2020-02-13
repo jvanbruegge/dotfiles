@@ -133,6 +133,8 @@ let g:LanguageClient_serverCommands = {
     \ 'dhall': ['dhall-lsp-server']
     \ }
 let g:LanguageClient_settingsPath = '~/.config/nvim/lsp.json'
+let g:LanguageClient_hoverPreview = 'Always'
+let g:LanguageClient_floatingHoverHighlight = 'Normal:PMenu'
 
 "Plugin config
 let g:airline_theme = 'badwolf'
@@ -142,7 +144,7 @@ let g:rainbow_conf = {
     \ 'ctermfgs': ['darkblue', 'darkgreen', 'red', 'magenta', 'brown', 'lightgreen']
 \ }
 
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
 
 set nrformats=alpha
 
