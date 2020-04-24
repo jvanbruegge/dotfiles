@@ -6,7 +6,6 @@ alias v='nvim'
 alias g='git'
 alias p='pnpm'
 alias px='pnpmx'
-alias o='xdg-open'
 alias k='kubectl'
 alias t='tmuxinator'
 
@@ -18,5 +17,12 @@ function k-env {
 }
 
 function update-mirrors {
-    sudo reflector --country Germany --age 24 --protocol https --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+    sudo reflector --country Germany --age 24 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+}
+
+function o {
+    set +m
+    nohup xdg-open $1 2>&1 >/dev/null &
+    disown
+    set -m
 }
