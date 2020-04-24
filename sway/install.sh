@@ -16,18 +16,27 @@ mkdir -p "$HOME/.config/waybar"
 
 ln -s "$(pwd)/sway/config" "$config/config"
 
-for f in $(ls "$(pwd)/sway/conf.d"); do
-    ln -s "$(pwd)/sway/conf.d/$f" "$config/conf.d/"
+for f in "$(pwd)"/sway/conf.d/*; do
+    ln -s "$f" "$config/conf.d/"
 done
 
-for f in $(ls "$(pwd)/sway/wallpapers"); do
-    ln -s "$(pwd)/sway/wallpapers/$f" "$config/wallpapers/"
+for f in "$(pwd)"/sway/wallpapers/*; do
+    ln -s "$f" "$config/wallpapers/"
 done
 
 ln -s "$(pwd)/sway/waybar.json" "$HOME/.config/waybar/config"
 ln -s "$(pwd)/sway/waybar.css" "$HOME/.config/waybar/style.css"
 
 ln -s "$(pwd)/sway/lock.sh" "$config/lock.sh"
+ln -s "$(pwd)/sway/env" "$config/env"
+
+ln -s "$(pwd)/sway/systemd/*" "$HOME/.config/systemd/user/"
 
 sudo ln -sf "$(pwd)/sway/xkb/us_de_diff" "/usr/share/X11/xkb/symbols/"
 sudo ln -sf "$(pwd)/sway/xkb/us_de" "/usr/share/X11/xkb/symbols/"
+
+sudo systemctl daemon-reload
+
+for s in "$(pwd)"/sway/systemd/*.service; do
+    systemctl --user enable "$(basename "$s")"
+done

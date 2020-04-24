@@ -10,7 +10,7 @@ set $right l
 
 set $term alacritty
 
-set $menu dmenu_path | wofi --show run | xargs swaymsg exec --
+set $menu dmenu_path | wofi --show drun | xargs swaymsg exec --
 
 set $lock ~/.config/sway/lock.sh
 
@@ -118,24 +118,9 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-##################################################
-## Status bar configuration                     ##
-##################################################
-bar {
-    swaybar_command waybar
-}
-
-####################################################
-## Misc configuration                             ##
-####################################################
-
-exec swayidle -w \
-    before-sleep 'loginctl lock-session $XDG_SESSION_ID' \
-    lock '~/.config/sway/lock.sh'
-
-exec mako --default-timeout 3000
-
 ####################################################
 ## Include other configuration                    ##
 ####################################################
 include ~/.config/sway/conf.d/*
+
+exec "systemctl --user import-environment; systemctl --user start sway-session.target"
