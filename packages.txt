@@ -1,6 +1,8 @@
 alacritty
 bluez
 brightnessctl-logind
+browserpass
+ccid
 dnsmasq
 firefox
 firefox-i18n-de
@@ -21,6 +23,8 @@ networkmanager
 ntp
 openssh
 pamixer
+pass
+pcsclite
 pulseaudio
 python-neovim
 reflector
@@ -40,4 +44,5 @@ waybar
 wl-clipboard
 wofi-hg
 xorg-server-xwayland
+yubikey-personalization
 zsh
