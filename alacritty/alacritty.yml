@@ -15,8 +15,6 @@ scrolling:
   history: 20000
   multiplier: 3
 
-tabspaces: 4
-
 font:
   normal:
     family: BitstreamVeraSansMono Nerd Font
