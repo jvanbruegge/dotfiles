@@ -35,9 +35,11 @@
     pu = pull
     m = merge
 
-    uu = !git fetch upstream && git rebase upstream/$(git branch --quiet | cut -c 3-)
+    uu = !git fetch upstream && git rebase upstream/$(git branch --quiet | grep '*' | cut -c 3-)
 
     l = log --pretty=oneline --abbrev-commit --graph
 
 [core]
     pager = less -F -X
+[commit]
+	gpgsign = true
