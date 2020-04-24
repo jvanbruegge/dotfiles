@@ -30,7 +30,7 @@ ln -s "$(pwd)/sway/waybar.css" "$HOME/.config/waybar/style.css"
 ln -s "$(pwd)/sway/lock.sh" "$config/lock.sh"
 ln -s "$(pwd)/sway/env" "$config/env"
 
-ln -s "$(pwd)/sway/systemd/*" "$HOME/.config/systemd/user/"
+ln -s "$(pwd)"/sway/systemd/* "$HOME/.config/systemd/user/"
 
 sudo ln -sf "$(pwd)/sway/xkb/us_de_diff" "/usr/share/X11/xkb/symbols/"
 sudo ln -sf "$(pwd)/sway/xkb/us_de" "/usr/share/X11/xkb/symbols/"
@@ -38,5 +38,7 @@ sudo ln -sf "$(pwd)/sway/xkb/us_de" "/usr/share/X11/xkb/symbols/"
 sudo systemctl daemon-reload
 
 for s in "$(pwd)"/sway/systemd/*.service; do
-    systemctl --user enable "$(basename "$s")"
+    if [ "$s" != "sway.service" ]; then
+        systemctl --user enable "$(basename "$s")"
+    fi
 done

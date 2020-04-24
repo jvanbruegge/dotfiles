@@ -1,9 +1,6 @@
 env_config="$HOME/.config"
 env_cache="$HOME/.cache"
 
-export MOZ_ENABLE_WAYLAND=1
-export _JAVA_AWT_WM_NONREPARENTING=1
-
 export CARGO_HOME="$env_cache/cargo"
 export ZSH="$env_cache/zsh/oh-my-zsh"
 export ZSH_CUSTOM="$env_cache/zsh/omz-custom"

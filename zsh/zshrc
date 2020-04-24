@@ -37,3 +37,8 @@ source "$ZSH/oh-my-zsh.sh"
 ###############################################
 setopt nobeep
 setopt hist_find_no_dups
+
+if [ "$(tty)" = "/dev/tty1" ]; then
+    systemctl --user import-environment
+    exec systemctl --wait --user start sway.service
+fi
