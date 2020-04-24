@@ -1,5 +1,4 @@
 alacritty
-alacritty-terminfo
 bluez
 brightnessctl-logind
 dnsmasq
