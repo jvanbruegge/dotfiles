@@ -21,6 +21,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 Plug 'altercation/vim-colors-solarized'
 
+Plug 'jamessan/vim-gnupg'
+
 "Fuzzy selection
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
