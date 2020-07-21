@@ -5,11 +5,11 @@ ccid
 dnsmasq
 fedora-firefox-wayland-bin
 file-roller
-gnupg
 flashfocus
 fwupd
 fzf
 git
+gnupg
 go
 grin
 intel-ucode
@@ -18,7 +18,8 @@ libva-mesa-driver
 mako
 mpv
 neovim
-nerd-fonts-complete
+nerd-fonts-arimo
+nerd-fonts-bitstream-vera-mono
 networkmanager
 ntp
 openssh
