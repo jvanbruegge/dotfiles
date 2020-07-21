@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+git submodule init
+git submodule update
+
 # Install AUR helper
 git clone https://aur.archlinux.org/yay.git
 cd yay
