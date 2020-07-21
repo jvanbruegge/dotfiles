@@ -6,7 +6,7 @@
     ff = false
 
 [pull]
-    ff = true
+    ff = only
 
 [alias]
     c = commit
