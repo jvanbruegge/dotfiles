@@ -126,13 +126,15 @@ nnoremap <leader>h :call LanguageClient_textDocument_hover()<CR>
 nnoremap <leader>g :call LanguageClient_textDocument_definition({'gotoCmd': 'tabnew'})<CR>
 nnoremap <leader>r :call LanguageClient_textDocument_rename()<CR>
 nnoremap <leader>f :call LanguageClient_textDocument_references()<CR>
+nnoremap <leader>c :call LanguageClient_textDocument_codeAction()<CR>
 nnoremap <c-i> :call LanguageClient_textDocument_formatting()<CR>
 vnoremap <c-i> :call LanguageClient_textDocument_rangeFormatting()<CR>
 
 let g:LanguageClient_serverCommands = {
     \ 'javascript': ['typescript-language-server', '--stdio'],
     \ 'typescript': ['typescript-language-server', '--stdio'],
-    \ 'dhall': ['dhall-lsp-server']
+    \ 'dhall': ['dhall-lsp-server'],
+    \ 'cpp': ['clangd']
     \ }
 let g:LanguageClient_settingsPath = '~/.config/nvim/lsp.json'
 let g:LanguageClient_hoverPreview = 'Always'
