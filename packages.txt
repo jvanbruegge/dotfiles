@@ -1,11 +1,11 @@
 alacritty
 bluez
 brightnessctl-logind
-browserpass
 ccid
 dnsmasq
-firefox
-firefox-i18n-de
+fedora-firefox-wayland-bin
+file-roller
+gnupg
 flashfocus
 fwupd
 fzf
@@ -23,7 +23,6 @@ networkmanager
 ntp
 openssh
 pamixer
-pass
 pcsclite
 pulseaudio
 python-neovim
