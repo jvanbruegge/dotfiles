@@ -1,6 +1,8 @@
 templates:
-  params:
-    author-name: Jan van Brügge
-    author-email: jan@vanbruegge.de
-    copyright: 2019 Jan van Brügge
-    github-username: jvanbruegge
+    params:
+        author-name: Jan van Brügge
+        author-email: jan@vanbruegge.de
+        copyright: 2019 Jan van Brügge
+        github-username: jvanbruegge
+ghc-options:
+    "$everything": -haddock
