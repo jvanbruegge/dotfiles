@@ -28,6 +28,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 "Language support
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'vmchale/dhall-vim'
 
 "Formatting
 Plug 'sdiehl/vim-ormolu'
