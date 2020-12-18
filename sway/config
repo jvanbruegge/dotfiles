@@ -106,6 +106,9 @@ bindsym $mod+f fullscreen
 bindsym Print exec grim -g "$(slurp)" - | wl-copy
 bindsym $mod+Print exec grim -g "$(slurp)" - > ~/Screenshots/$(date -Iseconds).png
 
+# Open network chooser
+bindsym $mod+w exec ~/dotfiles/sway/wifi/nmcli-rofi
+
 ## Resize mode
 mode "resize" {
     bindsym $left resize shrink width 10px
