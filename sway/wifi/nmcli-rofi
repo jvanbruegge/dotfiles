@@ -53,7 +53,7 @@ function wifi_list () {
 }
 
 function vpn_list () {
-    nmcli --fields ACTIVE,NAME,TYPE con | awk '{ if ($3 == "vpn") { print "VPN: "$0 } }' | sed 's/ *vpn *$/"/g' | \
+    nmcli --fields ACTIVE,NAME,TYPE con | awk '{ if ($NF == "vpn") { print "VPN: "$0 } }' | sed 's/ *vpn *$/"/g' | \
         sed "s/ *$INACTIVE */ Connect to \"/g" | sed "s/ *$ACTIVE */ Disconnect from \"/g"
 }
 
@@ -125,7 +125,7 @@ function main () {
       nmcli radio wifi on
 
     elif [[ "$OPS" == "VPN: "* ]]; then
-      name=$(echo "$OPS" | awk '{ print substr($NF,2,length($NF)-2) }')
+      name=$(echo "$OPS"  | cut -d'"' -f 2)
       if [[ "$OPS" =~ "Connect" ]]; then
         echo "Connect VPN $name"
         nmcli connection up "$name"
