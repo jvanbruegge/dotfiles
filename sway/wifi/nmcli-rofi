@@ -125,7 +125,6 @@ function main () {
       nmcli radio wifi on
 
     elif [[ "$OPS" == "VPN: "* ]]; then
-      echo $OPS
       name=$(echo "$OPS"  | cut -d'"' -f 2)
       if [[ "$OPS" =~ "Connect" ]]; then
         echo "Connect VPN $name"
